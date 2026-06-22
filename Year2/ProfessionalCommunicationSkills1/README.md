@@ -1,4 +1,4 @@
-##  🗣️ Professional Communication Skills 1
+##  🗣️ Professional Communication Skills 1 Reflection
 
 
 Gained: Strengthened presentation, report writing, and interpersonal communication skills.
