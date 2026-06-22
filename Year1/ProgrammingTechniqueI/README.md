@@ -1,4 +1,4 @@
-## 💻 Programming Technique I
+## 💻 Programming Technique I Reflection
 
 
 Gained: Learned the fundamentals of programming, including variables, control structures, functions, and basic problem-solving techniques.
