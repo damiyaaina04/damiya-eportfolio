@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+
+        <style>
+            h1 {
+                background-color: rgb(210, 105, 30);
+                text-align: center;
+                color: wheat ;
+            }
+
+            .personal {
+                background-color: rgb(188, 184, 138);
+                text-align: center;
+            }
+
+            .academic {
+                background-color: rgb(224, 207, 204);
+                text-align: center;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>STUDENT REGISTRATION FORM</h1>
+
+        <h2 class="personal">PERSONAL DETAILS</h2>
+        <form action="" method="post">
+
+        <label>Full Name : </label>
+        <input type="text" id="name" name="name"><br>
+
+        <label>Student ID : </label>
+        <input type="text" id="studname" name="studname"><br>
+
+        <label>Email Address : </label>
+        <input type="email" id="emailname" name="emailname"><br>
+
+        <label>Phone Number : </label>
+        <input type="text" id="phoneNum" name="PhoneNum"><br>
+
+        <label>Gender : </label><br>
+        <input type="radio" id="male" name="gender" value="MALE">
+        <label for="MALE">MALE</label><br>
+        <input type="radio" id="female" name="gender" value="FEMALE">
+        <label for="FEMALE">FEMALE</label><br>
+        <input type="radio" id="other" name="gender" value="OTHER">
+        <label for="OTHER">OTHER</label><br>
+
+        <label>Date of Birth : </label>
+        <input type="date" id="DOB" name="DOB"><br>
+
+        <h2 class="academic">ACADEMIC INFORMATION</h2>
+
+        <label for="program">Choose a program of Study : </label>
+        <select name="program" id="program">
+                <option value="cs">Computer Science</option>
+                <option value="is">Information System</option>
+                <option value="de">Data Engineering</option>
+        </select><br>
+
+        <label for="yearStudy">Choose year of study : </label>
+        <select name="yearStudy" id="yearStudy">
+                <option value="1">year 1</option>
+                <option value="2">year 2</option>
+                <option value="3">year 3</option>
+                <option value="4">year 4</option>
+        </select><br>
+
+        <h4>Subjects : </h4>
+        <input type="checkbox" id="DiLog" name="DiLog" value="Digital Logic">
+        <label for="DiLog">Digital Logic</label><br>
+
+        <input type="checkbox" id="DisStruct" name="DisStruct" value="Discrete Structure">
+        <label for="DisStruct">Discrete Structure</label><br>
+
+        <input type="checkbox" id="C++" name="C++1" value="Programming1">
+        <label for="C++1">Programming 1</label><br>
+
+        <input type="checkbox" id="TIS" name="TIS" value="Technology Information System">
+        <label for="TIS">Technology Information System</label><br>
+
+        <input type="checkbox" id="COA" name="COA" value="Computer Organization Architecture">
+        <label for="COA">Computer Organization and Architecture</label><br>
+
+        <p><button type="reset">RESET</button>
+           <button type="button" onclick="location.href='submit.html'">SUBMIT</button></p>
+    
+        </form>
+
+    </body>
+
+</html>
