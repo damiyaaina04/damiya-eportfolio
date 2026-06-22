@@ -1,0 +1,190 @@
+Q. A1
+
+use clinicdb
+db.createCollection("appointments")
+db.createCollection("loginSessions")
+show collections
+
+
+Q. A2
+Insert 6 documents for collection Appointments
+
+db.appointments.insertMany([
+  {
+    appointmentId: "A001",
+    patientName: "Sarah Khalila",
+    doctor: "Dr Han",
+    department: "Cardiology",
+    status: "COMPLETED",
+    fee: 250,
+    appointmentDate: new Date("2026-01-10")
+  },
+  {
+    appointmentId: "A002",
+    patientName: "Nur Jamila",
+    doctor: "Dr Iskandar",
+    department: "Dermatology",
+    status: "PENDING",
+    fee: 120,
+    appointmentDate: new Date("2026-01-12")
+  },
+  {
+    appointmentId: "A003",
+    patientName: "Danish Uqael",
+    doctor: "Dr Ariana",
+    department: "Neurology",
+    status: "COMPLETED",
+    fee: 300,
+    appointmentDate: new Date("2026-01-15")
+  },
+  {
+    appointmentId: "A004",
+    patientName: "Yusuf Iskandar",
+    doctor: "Dr Redza",
+    department: "Pediatrics",
+    status: "CANCELLED",
+    fee: 80,
+    appointmentDate: new Date("2026-01-18")
+  },
+  {
+    appointmentId: "A005",
+    patientName: "Mohd Eidlan",
+    doctor: "Dr Mawar",
+    department: "Cardiology",
+    status: "CANCELLED",
+    fee: 200,
+    appointmentDate: new Date("2026-01-20")
+  },
+  {
+    appointmentId: "A006",
+    patientName: "Nur Eleisha",
+    doctor: "Dr Farhat",
+    department: "Gynecology",
+    status: "PENDING",
+    fee: 150,
+    appointmentDate: new Date("2026-01-22")
+   }
+])
+
+Insert 6 documents for collection loginSessions.
+
+clinicdb> db.loginSessions.insertMany([
+   {
+    staffId: "S001",
+    staffName: "Maria",
+    role: "Nurse",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.10",
+    loginTime: new Date("2026-01-20T08:30:00")
+    },
+    {
+    staffId: "S002",
+    staffName: "Aisyah",
+    role: "Admin",
+    status: "INACTIVE",
+    ipAddress: "192.168.1.11",
+    loginTime: new Date("2026-01-20T09:00:00")
+    },
+    {
+    staffId: "S003",
+    staffName: "Harlene",
+    role: "Receptionist",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.12",
+    loginTime: new Date("2026-01-20T09:30:00")
+    },
+    {
+    staffId: "S004",
+    staffName: "Farhat",
+    role: "Doctor",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.13",
+    loginTime: new Date("2026-01-20T10:00:00")
+    },
+    {
+    staffId: "S005",
+    staffName: "Redza",
+    role: "Doctor",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.14",
+    loginTime: new Date("2026-01-20T10:30:00")
+    },
+    {
+    staffId: "S006",
+    staffName: "Daisy",
+    role: "Nurse",
+    status: "ACTIVE",
+    ipAddress: "192.168.1.15",
+    loginTime: new Date("2026-01-20T11:00:00")
+    }
+])
+
+Q. B1
+
+db.appointments.find(
+  {
+  status: "COMPLETED",
+  fee: { $gte: 100, $lte: 300 }
+  },
+  {
+  _id: 0,
+  appointmentId: 1,
+  patientName: 1,
+  department: 1,
+  fee: 1,
+  }
+  ).sort({department: 1, fee: -1})
+
+Q. B2
+
+ db.appointments.aggregate([
+  {
+  $group: {
+    _id: "$department",
+    totalAppointments: { $sum: 1 },
+    totalFees: { $sum: "$fee" }
+   }
+  },
+  {
+    $sort: { totalFees: -1 }
+  }
+])
+
+Q. C1
+
+db.loginSessions.find(
+   {status: "ACTIVE" },
+   {_id: 0, staffName: 1, role: 1, ipAddress: 1, loginTime: 1 }
+   ).sort({ loginTime: -1})
+
+Q. C2
+List all distinct IP addresses used by staff with ACTIVE sessions
+db.loginSessions.distinct("ipAddress", { status: "ACTIVE" })
+
+ Calculate the number of unique staff members who currently have ACTIVE sessions. 
+db.loginSessions.distinct("staffId", { status: "ACTIVE" }).length
+
+Q. D1
+
+db.appointments.createIndex({ department: 1, status: 1})
+
+Q. D2
+Update all appointments with status CANCELLED to ARCHIVED.
+db.appointments.updateMany(
+   {status: "CANCELLED"},
+   {$set: {status: "ARCHIVED"}}
+   )
+
+ Delete all login session records with status INACTIVE
+ db.loginSessions.deleteMany({ status: "INACTIVE" })
+
+
+
+
+
+ 
+
+ 
+
+
+
