@@ -4,10 +4,10 @@
 
 Welcome to my academic e-portfolio! This repository showcases my learning journey throughout my Bachelor of Computer Science (Data Engineering) programme at Universiti Teknologi Malaysia (UTM). It contains selected assignments, projects, and reflections from Year 1 to Year 3, demonstrating my growth in software development, databases, artificial intelligence, data analytics, and data engineering.
 
-## Education
+## 🎓 Education
 Bachelor of Computer Science (Data Engineering)
 
-## Technical Skills
+## 🛠️ Technical Skills
 - Java
 - Python
 - SQL
