@@ -19,6 +19,7 @@ Bachelor of Computer Science (Data Engineering)
 - VS Code
 
 ##📚 Academic Journey
+
 📘 Year 1
 Digital Logic
 Discrete Structure
