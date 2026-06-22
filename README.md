@@ -21,38 +21,38 @@ Bachelor of Computer Science (Data Engineering)
 ## 📚 Academic Journey
 
 📘 Year 1
-Digital Logic
-Discrete Structure
-Programming Technique I & II
-Technology & Information System
-Human Computer Interaction
-System Analysis and Design
-Probability & Statistical Data Analysis
-Integrity and Anti-Corruption
-Appreciation of Ethics and Civilizations
+- Digital Logic
+- Discrete Structure
+- Programming Technique I & II
+- Technology & Information System
+- Human Computer Interaction
+- System Analysis and Design
+- Probability & Statistical Data Analysis
+- Integrity and Anti-Corruption
+- Appreciation of Ethics and Civilizations
 
 📗 Year 2
-Data Structure and Algorithm
-Database Programming
-Software Engineering
-System Development Technology
-Network Communications
-Photocreative Services
-Object-Oriented Programming
-Data Mining
-Data Analytics Programming
-Operating Systems
-Technopreneurship Seminar
-Professional Communication Skills
+- Data Structure and Algorithm
+- Database Programming
+- Software Engineering
+- System Development Technology
+- Network Communications
+- Photocreative Services
+- Object-Oriented Programming
+- Data Mining
+- Data Analytics Programming
+- Operating Systems
+- Technopreneurship Seminar
+- Professional Communication Skills
 
 📙 Year 3
-Artificial Intelligence
-Enterprise Systems Design and Modelling
-Application Development
-High Performance Data Processing
-Business Intelligence
-Special Topic in Data Engineering
-Entrepreneurship and Innovation
+- Artificial Intelligence
+- Enterprise Systems Design and Modelling
+- Application Development
+- High Performance Data Processing
+- Business Intelligence
+- Special Topic in Data Engineering
+- Entrepreneurship and Innovation
 
 ## 📬 Connect With Me
 💼 LinkedIn: https://www.linkedin.com/in/damiya-aina-2a4857299/
