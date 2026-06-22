@@ -18,7 +18,7 @@ Bachelor of Computer Science (Data Engineering)
 - Data Analytics
 - VS Code
 
-##📚 Academic Journey
+## 📚 Academic Journey
 
 📘 Year 1
 Digital Logic
